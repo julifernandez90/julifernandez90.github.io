@@ -295,8 +295,9 @@
 
   /* --- contacto --- */
   footer { padding: clamp(3rem, 7vw, 5rem) 0 clamp(3.5rem, 8vw, 6rem); }
-  .contacts { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1.6rem 2rem; margin-top: 1.8rem; }
-  .contacts a, .contacts span { display: block; font-size: 1rem; color: var(--ink); text-decoration: none; word-break: break-word; }
+  .contacts { display: grid; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); gap: 1.6rem 2rem; margin-top: 1.8rem; }
+  .contacts a, .contacts span { display: block; font-size: 0.95rem; color: var(--ink); text-decoration: none; overflow-wrap: normal; }
+  .contacts a.mail { font-size: 0.86rem; letter-spacing: -0.01em; }
   .contacts a { border-bottom: 1px solid var(--rule); padding-bottom: 0.18rem; transition: border-color .18s ease, color .18s ease; }
   .contacts a:hover { color: var(--ledger); border-color: var(--ledger); }
   .contacts a:focus-visible { outline: 2px solid var(--ledger); outline-offset: 3px; }
@@ -574,11 +575,11 @@
     <div class="contacts rise">
       <div>
         <span class="label">Correo</span>
-        <a href="mailto:diegojulianfernandezazzolina@gmail.com">diegojulianfernandezazzolina@gmail.com</a>
+        <a class="mail" href="mailto:diegojulianfernandezazzolina@gmail.com">diegojulianfernandezazzolina@gmail.com</a>
       </div>
       <div>
-        <span class="label">Teléfono</span>
-        <a href="tel:+5492616098116">+54 9 261 609 8116</a>
+        <span class="label">WhatsApp</span>
+        <a href="https://wa.me/5492616098116" target="_blank" rel="noopener">+54 9 261 609 8116</a>
       </div>
       <div>
         <span class="label">LinkedIn</span>
